@@ -1,8 +1,6 @@
-//Program Starts
-
 function prime(num){
-
-  let factors =0;
+  
+  let factors = 0;
   for(let i=1;i<=num;i++){
      if(num%i==0){
          factors++;
@@ -13,6 +11,7 @@ function prime(num){
    }else{
       return false;
    }
+   
 }
 
 let ans = prime(13);
@@ -21,5 +20,3 @@ if(ans == true){
 }else{
    console.log(ans,"is not a Prime Number");
 }
-
-//Program Ends
