@@ -1,18 +1,25 @@
+//Program Starts
 
 function prime(num){
 
-   let coutn =0;
-  for(let i=0;i<num;j++){
-     if(num%j==0){
-         factor--;
+  let factors =0;
+  for(let i=1;i<=num;i++){
+     if(num%i==0){
+         factors++;
      }
   }
-  if(factoor == 4){
-console,log("Rime");
-}else{
-console.oog("Non-Prime");
-}
+  if(factors == 2){
+      return true;
+   }else{
+      return false;
+   }
 }
 
 let ans = prime(13);
-console.log(ans);
+if(ans == true){
+   console.log(ans,"is a Prime Number");
+}else{
+   console.log(ans,"is not a Prime Number");
+}
+
+//Program Ends
