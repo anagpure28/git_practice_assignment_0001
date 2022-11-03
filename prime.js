@@ -1,17 +1,17 @@
 
 function prime(num){
 
-   let coutn =0;
-  for(let i=0;i<num;j++){
-     if(num%j==0){
-         factor--;
+   let factor=0;
+  for(let i=1;i<=num;i++){
+     if(num%i==0){
+         factor++;
      }
   }
-  if(factoor == 4){
-console,log("Rime");
-}else{
-console.oog("Non-Prime");
-}
+  if(factor == 2){
+      console.log("Prime");
+  }else{
+      console.log("Non-Prime");
+  }
 }
 
 let ans = prime(13);
